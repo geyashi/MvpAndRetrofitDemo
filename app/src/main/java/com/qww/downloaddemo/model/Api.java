@@ -1,7 +1,6 @@
-package com.qww.downloaddemo;
+package com.qww.downloaddemo.model;
 
-import com.qww.downloaddemo.domain.PostWithParamsResult;
-import com.qww.downloaddemo.domain.PostWithParamsResult.ShowapiResBodyBean.PagebeanBean;
+import com.qww.downloaddemo.model.domain.PostWithParamsResult;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -9,7 +8,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 
-public interface API {
+public interface Api {
 
     @FormUrlEncoded
     @POST("/126-2")

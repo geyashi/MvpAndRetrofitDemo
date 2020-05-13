@@ -1,4 +1,4 @@
-package com.qww.downloaddemo.domain;
+package com.qww.downloaddemo.model.domain;
 
 import java.util.List;
 

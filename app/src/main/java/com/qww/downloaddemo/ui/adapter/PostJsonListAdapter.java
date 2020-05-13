@@ -1,12 +1,10 @@
-package com.qww.downloaddemo.adapter;
+package com.qww.downloaddemo.ui.adapter;
 
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,9 +13,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.qww.downloaddemo.R;
-import com.qww.downloaddemo.domain.PostWithParamsResult;
-import com.qww.downloaddemo.domain.PostWithParamsResult.ShowapiResBodyBean.PagebeanBean;
-import com.qww.downloaddemo.domain.PostWithParamsResult.ShowapiResBodyBean.PagebeanBean.ContentlistBean;
+import com.qww.downloaddemo.model.domain.PostWithParamsResult.ShowapiResBodyBean.PagebeanBean;
+import com.qww.downloaddemo.model.domain.PostWithParamsResult.ShowapiResBodyBean.PagebeanBean.ContentlistBean;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

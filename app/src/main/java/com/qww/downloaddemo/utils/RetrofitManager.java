@@ -5,11 +5,20 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitManager {
 
-    private static Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("https://route.showapi.com")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build();
-    public static Retrofit getRetrofit() {
+    private static final RetrofitManager ourInstance = new RetrofitManager();
+    private final Retrofit retrofit;
+    public static RetrofitManager getInstance() {
+        return ourInstance;
+    }
+
+    public RetrofitManager() {
+        retrofit = new Retrofit.Builder()
+                .baseUrl(Constants.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+    }
+
+    public Retrofit getRetrofit() {
         return retrofit;
     }
 }
